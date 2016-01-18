@@ -21,7 +21,6 @@ class ViewController: UIViewController {
     var currentTaps = 0
     
     @IBAction func onPlayButtonPressed(sender: UIButton!) {
-        
         if howManyTapsTextField.text != nil && howManyTapsTextField.text != "" {
             
             logoImageView.hidden = true
@@ -34,7 +33,40 @@ class ViewController: UIViewController {
             maxTaps = Int(howManyTapsTextField.text!)!
             currentTaps = 0
             
-            tapsLabel.text = "\(currentTaps) Taps"
+            updateTapsLabel()
+        }
+    }
+    
+    @IBAction func onCoinTapped(sender: UIButton!) {
+        currentTaps++
+        updateTapsLabel()
+        
+        if isGameOver() {
+            restartGame()
+        }
+    }
+    
+    func restartGame() {
+        maxTaps = 0
+        howManyTapsTextField.text = ""
+        
+        logoImageView.hidden = false
+        playButton.hidden = false
+        howManyTapsTextField.hidden = false
+        
+        tapButton.hidden = true
+        tapsLabel.hidden = true
+    }
+    
+    func updateTapsLabel() {
+        tapsLabel.text = "\(currentTaps) Taps"
+    }
+    
+    func isGameOver() -> Bool {
+        if currentTaps >= maxTaps {
+            return true
+        } else {
+            return false
         }
     }
 }
