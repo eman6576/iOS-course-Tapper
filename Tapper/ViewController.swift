@@ -9,19 +9,33 @@
 import UIKit
 
 class ViewController: UIViewController {
+    //Outlets
     @IBOutlet weak var logoImageView: UIImageView!
-    @IBOutlet weak var howMantTapsTextField: UITextField!
+    @IBOutlet weak var howManyTapsTextField: UITextField!
     @IBOutlet weak var playButton: UIButton!
     @IBOutlet weak var tapButton: UIButton!
     @IBOutlet weak var tapsLabel: UILabel!
     
+    //Properties
+    var maxTaps = 0
+    var currentTaps = 0
+    
     @IBAction func onPlayButtonPressed(sender: UIButton!) {
-        logoImageView.hidden = true
-        playButton.hidden = true
-        howMantTapsTextField.hidden = true
         
-        tapButton.hidden = false
-        tapsLabel.hidden = false
+        if howManyTapsTextField.text != nil && howManyTapsTextField.text != "" {
+            
+            logoImageView.hidden = true
+            playButton.hidden = true
+            howManyTapsTextField.hidden = true
+            
+            tapButton.hidden = false
+            tapsLabel.hidden = false
+            
+            maxTaps = Int(howManyTapsTextField.text!)!
+            currentTaps = 0
+            
+            tapsLabel.text = "\(currentTaps) Taps"
+        }
     }
 }
 
