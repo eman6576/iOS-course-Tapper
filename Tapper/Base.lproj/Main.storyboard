@@ -34,6 +34,9 @@
                                     <constraint firstAttribute="height" constant="120" id="WiV-x1-D7m"/>
                                 </constraints>
                                 <state key="normal" image="playbtn"/>
+                                <connections>
+                                    <action selector="onPlayButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vJm-2k-mbK"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="How many taps to win?" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NJN-33-mpt" userLabel="TapsTextField">
                                 <rect key="frame" x="179" y="343" width="244" height="30"/>
@@ -52,7 +55,7 @@
                                 </constraints>
                                 <state key="normal" image="coin"/>
                             </button>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rHz-37-Tet">
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rHz-37-Tet" userLabel="TapsLabel">
                                 <rect key="frame" x="179" y="233" width="244" height="93"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="244" id="NDU-Cx-Vpc"/>
@@ -81,10 +84,17 @@
                             <constraint firstItem="aHs-Cf-lqu" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="zIg-d9-q9i"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="howMantTapsTextField" destination="NJN-33-mpt" id="pvO-2V-ytU"/>
+                        <outlet property="logoImageView" destination="OpY-xP-2al" id="dJF-Hd-ea3"/>
+                        <outlet property="playButton" destination="Lca-Ao-eAM" id="rI7-z4-YsW"/>
+                        <outlet property="tapButton" destination="uA9-7j-1uN" id="vO2-mK-sBk"/>
+                        <outlet property="tapsLabel" destination="rHz-37-Tet" id="3Ut-Up-Jbl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="120" y="263"/>
+            <point key="canvasLocation" x="-345" y="-175"/>
         </scene>
     </scenes>
     <resources>
