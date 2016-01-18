@@ -85,7 +85,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="howMantTapsTextField" destination="NJN-33-mpt" id="pvO-2V-ytU"/>
+                        <outlet property="howManyTapsTextField" destination="NJN-33-mpt" id="LNH-0c-L1b"/>
                         <outlet property="logoImageView" destination="OpY-xP-2al" id="dJF-Hd-ea3"/>
                         <outlet property="playButton" destination="Lca-Ao-eAM" id="rI7-z4-YsW"/>
                         <outlet property="tapButton" destination="uA9-7j-1uN" id="vO2-mK-sBk"/>
