@@ -27,11 +27,21 @@
                                     <constraint firstAttribute="width" constant="255" id="avi-rh-yJq"/>
                                 </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lca-Ao-eAM">
+                                <rect key="frame" x="179" y="393" width="249" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="249" id="Dh1-Vq-9qP"/>
+                                    <constraint firstAttribute="height" constant="120" id="WiV-x1-D7m"/>
+                                </constraints>
+                                <state key="normal" image="playbtn"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="Lca-Ao-eAM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6gq-cj-3PO"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="aHs-Cf-lqu" secondAttribute="bottom" id="E2q-zL-8rw"/>
                             <constraint firstItem="aHs-Cf-lqu" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="REF-kv-F91"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Lca-Ao-eAM" secondAttribute="bottom" constant="87" id="U1Q-bd-mkE"/>
                             <constraint firstItem="OpY-xP-2al" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aPN-fh-IZU"/>
                             <constraint firstItem="OpY-xP-2al" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="bzs-FO-JkJ"/>
                             <constraint firstAttribute="trailing" secondItem="aHs-Cf-lqu" secondAttribute="trailing" id="pAE-Kd-cb7"/>
@@ -41,11 +51,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="330" y="319"/>
+            <point key="canvasLocation" x="218" y="278"/>
         </scene>
     </scenes>
     <resources>
         <image name="TAPPER" width="246" height="76"/>
+        <image name="playbtn" width="356" height="175"/>
         <image name="retro backgruond03" width="1667" height="1667"/>
     </resources>
 </document>
