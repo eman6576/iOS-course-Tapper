@@ -35,15 +35,26 @@
                                 </constraints>
                                 <state key="normal" image="playbtn"/>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="How many taps to win?" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NJN-33-mpt">
+                                <rect key="frame" x="179" y="343" width="244" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="244" id="6vD-cA-l2S"/>
+                                    <constraint firstAttribute="height" constant="45" id="VYx-my-MUr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="Lca-Ao-eAM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6gq-cj-3PO"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="aHs-Cf-lqu" secondAttribute="bottom" id="E2q-zL-8rw"/>
+                            <constraint firstItem="Lca-Ao-eAM" firstAttribute="centerX" secondItem="NJN-33-mpt" secondAttribute="centerX" id="P2t-Xx-zt5"/>
                             <constraint firstItem="aHs-Cf-lqu" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="REF-kv-F91"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Lca-Ao-eAM" secondAttribute="bottom" constant="87" id="U1Q-bd-mkE"/>
                             <constraint firstItem="OpY-xP-2al" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aPN-fh-IZU"/>
                             <constraint firstItem="OpY-xP-2al" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="bzs-FO-JkJ"/>
+                            <constraint firstItem="Lca-Ao-eAM" firstAttribute="top" secondItem="NJN-33-mpt" secondAttribute="bottom" constant="20" id="lgb-1y-amN"/>
                             <constraint firstAttribute="trailing" secondItem="aHs-Cf-lqu" secondAttribute="trailing" id="pAE-Kd-cb7"/>
                             <constraint firstItem="aHs-Cf-lqu" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="zIg-d9-q9i"/>
                         </constraints>
