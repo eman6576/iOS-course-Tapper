@@ -9,17 +9,19 @@
 import UIKit
 
 class ViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+    @IBOutlet weak var logoImageView: UIImageView!
+    @IBOutlet weak var howMantTapsTextField: UITextField!
+    @IBOutlet weak var playButton: UIButton!
+    @IBOutlet weak var tapButton: UIButton!
+    @IBOutlet weak var tapsLabel: UILabel!
+    
+    @IBAction func onPlayButtonPressed(sender: UIButton!) {
+        logoImageView.hidden = true
+        playButton.hidden = true
+        howMantTapsTextField.hidden = true
+        
+        tapButton.hidden = false
+        tapsLabel.hidden = false
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-
 }
 
